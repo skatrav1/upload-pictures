@@ -1,0 +1,16 @@
+<h1>All Photos</h1>
+<%= link_to 'Upload New Photo', new_photo_path %>
+<% @photos.each do |photo| %>
+  <div>
+    <%= image_tag photo.image.thumb.url if photo.image? %>
+    <%= link_to 'Show', photo %>
+    <%= link_to 'Edit', edit_photo_path(photo) %>
+    
+    <%= form_for photo, url: photo_path(photo), method: :delete, data: { confirm: 'Are you sure?' } do |f| %>
+      <%= f.submit 'Delete' %>
+    <% end %>
+  </div>
+<% end %>
+<% if @photos.empty? %>
+  <p>No photos available.</p>
+<% end %>

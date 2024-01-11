@@ -1,0 +1,15 @@
+<p>
+    <strong>Title:</strong>
+    <%= @photo.title %>
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= @photo.description %>
+</p>    
+
+<%= image_tag @photo.image.url %>
+
+<div>
+<%= link_to 'Back', photos_path %>
+</div>
