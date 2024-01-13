@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 # The base controller for the application, from which all other controllers inherit.
-# It includes fundamental behaviors and setups required across the application, such as
-# - Parameter sanitization for Devise
 
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?

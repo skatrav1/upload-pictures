@@ -26,7 +26,7 @@ class PhotosControllerTest < ActionDispatch::IntegrationTest
     photo_params = {
       title: 'My Photo',
       description: 'Test description',
-      image: fixture_file_upload('image.jpg', 'image/jpeg') # Update the path accordingly
+      image: fixture_file_upload('image.jpg', 'image/jpeg')
     }
   
     assert_difference('Photo.count') do
