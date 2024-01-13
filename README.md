@@ -61,6 +61,7 @@ The application will be available at `http://localhost:3000`.
 ## Uploading Photos
 
 Users can upload photos using the form available at `http://localhost:3000/photos/new`. The form includes fields for the photo's title, description, and the image file.
+The uploaded photos can be viewed in the folder - "public/uploads/photo/image/4ee31771732a25240d8b"
 
 ## Admin Features
 
