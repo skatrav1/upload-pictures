@@ -21,9 +21,9 @@ bundle install
 ```rails db:migrate``` #to run the migrations for database to create the tables
 
 ```rails console
-user = User.create(email: 'superuser@example.com', password: 'password', admin: true) (OR) something similar to create a super admin
+user = User.create(email: 'superuser@example.com', password: 'password', admin: true)``` (OR) something similar to create a super admin
 #We can use the same method to create a regular user by setting the flag admin: false
-```
+
 Run the application:
 
 ```bash
