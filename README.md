@@ -64,6 +64,7 @@ Users can upload photos using the form available at `http://localhost:3000/photo
 
 ## Admin Features
 
-Admin users can manage user accounts. The `UsersController` and `user.rb` model include methods to check if a user is an admin and to perform admin-specific actions.
+Admin users upload, edit and delete photos. The `UsersController` and `user.rb` model include methods to check if a user is an admin and to perform admin-specific actions.
+Non-admin users can only view the photos, register and logout.
 
 
