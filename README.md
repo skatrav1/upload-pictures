@@ -69,3 +69,8 @@ Admin users upload, edit and delete photos. The `UsersController` and `user.rb` 
 Non-admin users can only view the photos, register and logout.
 
 
+
+### Docker commands to pull the image from the dockerhub registry
+```docker pull saiko925/image-uploads:latest```
+
+
