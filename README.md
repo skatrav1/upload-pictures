@@ -18,6 +18,8 @@ cd cat-photo-album
 bundle install
 ```
 ##Before running the application, create a super admin user by doing the following:
+```rails db:migrate``` #to run the migrations for database to create the tables
+
 ```rails console
 user = User.create(email: 'superuser@example.com', password: 'password', admin: true) (OR) something similar to create a super admin
 #We can use the same method to create a regular user by setting the flag admin: false
